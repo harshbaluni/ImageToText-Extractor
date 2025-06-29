@@ -1,0 +1,76 @@
+TextBlock(block=Rectangle(x_1=104.67264556884766, y_1=1032.21875, x_2=599.1765747070312, y_2=1323.7525634765625), 
+text= We also examine how our dataset can help with
+world document digitization application. When digitizing
+new publications, researchers usually do not generate large
+scale ground truth data to train their layout analysis models.
+If they are able to adapt our dataset, or models trained on
+our dataset, to develop models on their data, they can build
+their pipelines more efficiently and develop more accurate
+models. To this end, we conduct two experiments. First we
+examine how layout analysis models trained on the main
+pages can be used for understanding index pages. More-
+over, we study how the pre-trained models perform on other
+historical Japanese documents.
+, id=0, type=Text, parent=None, next=None, score=0.9980863332748413)
+
+
+TextBlock(block=Rectangle(x_1=103.88938903808594, y_1=766.8649291992188, x_2=595.5885009765625, y_2=968.8319702148438), 
+text=tion over union (IOU) level [0.50:0.95]’, on the test data. In
+general, the high mAP values indicate accurate detection of
+the layout elements. The Faster R-CNN and Mask R-CNN
+achieve comparable results, better than RetinaNet. Notice-
+ably, the detections for small blocks like title are less pre-
+cise, and the accuracy drops sharply for the title category. In
+Figure 8, (a) and (b) illustrate the accurate prediction results
+of the Faster R-CNN model.
+, id=1, type=Text, parent=None, next=None, score=0.9966328740119934)
+
+
+TextBlock(block=Rectangle(x_1=108.64063262939453, y_1=1448.55517578125, x_2=598.8385009765625, y_2=1488.103759765625), 
+text=?This is a core metric developed for the COCO competition [| 2] for
+evaluating the object detection quality.
+, id=2, type=Text, parent=None, next=None, score=0.9950971007347107)
+
+
+TextBlock(block=Rectangle(x_1=105.43910217285156, y_1=671.7182006835938, x_2=1137.59375, y_2=748.4442138671875), 
+text=Figure 7: Annotation Examples in HJDataset. (a) and (b) show two examples for the labeling of main pages. The boxes
+are colored differently to reflect the layout element categories. Illustrated in (c), the items in each index page row are
+categorized as title blocks, and the annotations are denser.
+, id=3, type=Text, parent=None, next=None, score=0.9950842261314392)
+
+
+TextBlock(block=Rectangle(x_1=103.4326400756836, y_1=1327.6221923828125, x_2=601.0582275390625, y_2=1429.9608154296875), 
+text=Table 4 compares the performance of five Faster R-CNN
+models that are trained differently on index pages. If the
+model loads pre-trained weights from HJDataset, it includes
+information learned from main pages. Models trained over
+, id=4, type=Text, parent=None, next=None, score=0.9950313568115234)
+
+
+TextBlock(block=Rectangle(x_1=639.8296508789062, y_1=772.9141235351562, x_2=1135.684326171875, y_2=1044.6287841796875), 
+text=all the training data can be viewed as the benchmarks, while
+training with few samples (five in this case) are consid-
+ered to mimic real-world scenarios. Given different train-
+ing data, models pre-trained on HJDataset perform signifi-
+cantly better than those initialized with COCO weights. In-
+tuitively, models trained on more data perform better than
+those with fewer samples. We also directly use the model
+trained on main to predict index pages without fine-
+tuning. The low zero-shot prediction accuracy indicates the
+dissimilarity between index and main pages. The large
+increase in mAP from 0.344 to 0.471 after the model is
+, id=5, type=Text, parent=None, next=None, score=0.9973708391189575)
+
+
+TextBlock(block=Rectangle(x_1=638.7540893554688, y_1=1075.3597412109375, x_2=1137.2435302734375, y_2=1154.6163330078125), 
+text=Table 3: Detection mAP @ IOU [0.50:0.95] of different
+models for each category on the test set. All values are given
+as percentages.
+, id=6, type=Text, parent=None, next=None, score=0.9640975594520569)
+
+ 
+TextBlock(block=Rectangle(x_1=646.4181518554688, y_1=1420.1715087890625, x_2=1132.86865234375, y_2=1479.7222900390625), 
+text=* For training Mask R-CNN, the segmentation masks are the quadri-
+lateral regions for each block. Compared to the rectangular bounding
+boxes, they delineate the text region more accurately.
+, id=7, type=Text, parent=None, next=None, score=0.9996440410614014)
