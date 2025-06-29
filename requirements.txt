@@ -1,0 +1,3 @@
+layoutparser[ocr,detectron2]
+opencv-python
+Pillow==8.4.0
